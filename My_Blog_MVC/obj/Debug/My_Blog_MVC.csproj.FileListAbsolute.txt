@@ -56,3 +56,4 @@ C:\Users\Tetik\documents\visual studio 2013\Projects\My_Blog_MVC\My_Blog_MVC\bin
 C:\Users\Tetik\documents\visual studio 2013\Projects\My_Blog_MVC\My_Blog_MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Tetik\documents\visual studio 2013\Projects\My_Blog_MVC\My_Blog_MVC\obj\Debug\My_Blog_MVC.dll
 C:\Users\Tetik\documents\visual studio 2013\Projects\My_Blog_MVC\My_Blog_MVC\obj\Debug\My_Blog_MVC.pdb
+C:\Users\Tetik\documents\visual studio 2013\Projects\My_Blog_MVC\My_Blog_MVC\obj\Debug\My_Blog_MVC.csprojResolveAssemblyReference.cache
