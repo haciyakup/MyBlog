@@ -1,0 +1,76 @@
+﻿@model My_Blog_MVC.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+       
+        <dt>
+            @Html.DisplayNameFor(model => model.postTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.preview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.preview)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.postContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postContent)
+        </dd>
+
+        @if (Model.Files.Any(f => f.FileType == My_Blog_MVC.Models.FileType.Image))
+        {
+            <dt>
+                Image
+            </dt>
+            
+           
+            <dd>
+                <img src="~/File?id=@Model.Files.First(f => f.FileType == My_Blog_MVC.Models.FileType.Image).FileId" alt="avatar" height="200" width="300" />
+            </dd>
+        }
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.postDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdBy)
+        </dd>
+
+        
+        
+
+        
+        
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.postId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
